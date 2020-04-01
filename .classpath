@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry kind="src" path="vendingmachine/src/main/java"/>
-	<classpathentry kind="src" path="vendingmachine/src/test/java"/>
-	<classpathentry kind="lib" path="vendingmachine/target/masimo-vending-machine.jar"/>
-	<classpathentry kind="lib" path="vendingmachine/target/vendingmachine-0.0.1-SNAPSHOT-shaded.jar"/>
-	<classpathentry kind="lib" path="vendingmachine/target/vendingmachine-0.0.1-SNAPSHOT.jar"/>
-	<classpathentry kind="lib" path="vendingmachine/target/vendingmachine-1.0.0-shaded.jar"/>
-	<classpathentry kind="lib" path="vendingmachine/target/vendingmachine-1.0.0.jar"/>
-	<classpathentry kind="output" path="vendingmachine/target/classes"/>
+	<classpathentry kind="src" path="01_LinkedList-01/src"/>
+	<classpathentry kind="src" path="02_Queue_LinkedList/src"/>
+	<classpathentry kind="src" path="03_Stack_Array-02/src"/>
+	<classpathentry kind="src" path="03_Stack_Array/src"/>
+	<classpathentry kind="src" path="03_Stack_LinkedList/src"/>
+	<classpathentry kind="src" path="04_Graph-DFS-01/src"/>
+	<classpathentry kind="src" path="04_Graph-WFS-01/src"/>
+	<classpathentry kind="src" path="05_BinarySearchTree/src"/>
+	<classpathentry kind="src" path="05_Tree-Binary-01/src"/>
+	<classpathentry kind="src" path="CodeInterview/src"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="output" path="01_LinkedList-01/bin"/>
 </classpath>
