@@ -1,3 +1,5 @@
+//https://www.tutorialspoint.com/java/util/java_util_linkedlist.htm
+
 import java.util.*;
 
 public class MyLinkedList {
@@ -31,7 +33,6 @@ public class MyLinkedList {
 		Object element = link.get(2); 
         System.out.println("Element returned by get() : " + element); 
         link.set(2, "Y"); 
-        System.out.println("Linked list after change : " + link);
-		
+        System.out.println("Linked list after change : " + link);       
 	}
 }
