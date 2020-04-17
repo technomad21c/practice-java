@@ -15,7 +15,10 @@ public class MyIntStream {
 		}
 		
 		IntStream str = IntStream.of(11, 22, 33, 44, 55);
-		str.forEach(s -> System.out.println(s));
+		str.forEach(s ->{
+			System.out.println(s);
+			System.out.println("***");
+		});
 		
 		List<Integer> ints = IntStream.of(1,2,3,4,5)
 	            .boxed()
@@ -69,13 +72,30 @@ public class MyIntStream {
         boolean answer = stream.noneMatch(num -> num % 5 == 0);  
         // Displaying the result 
         System.out.println(answer); 
+        
+        stream = IntStream.of(3, 9, 12, 15);    
+        answer = stream.noneMatch(num -> {
+        	if (num % 3 == 0)
+        		return false;
+        	else
+        		return true;
+        		});  
+        // Displaying the result 
+        System.out.println(answer); 
 		
 		stream = IntStream.range(1, 100);
         List<Integer> primes = stream.filter(MyIntStream::isPrime)
                                     .boxed()
                                     .collect(Collectors.toList());         
         System.out.println(primes);
+        
+        stream = IntStream.range(1, 100);
+        primes = stream.filter(i -> i > 1 && IntStream.range(2, i).noneMatch(index -> i % index == 0))
+                                    .boxed()
+                                    .collect(Collectors.toList());         
+        System.out.println(primes);
 	}
+	
 	
 	public static boolean isPrime(int i) 
     {
