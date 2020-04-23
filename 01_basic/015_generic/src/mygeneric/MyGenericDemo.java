@@ -33,6 +33,9 @@ public class MyGenericDemo {
 		System.out.println(p1.id.intValue());
 		
 		p1.<EmployeeInfo>printInfo(e);
-		p1.printInfo(e);
+//		p1.printInfo(e.rank);
+		
+		p1.<Integer>printInfo(i);
+		
 	}
 }
