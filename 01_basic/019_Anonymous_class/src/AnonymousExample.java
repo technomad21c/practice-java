@@ -1,4 +1,5 @@
 //https://cornswrold.tistory.com/239
+//https://imasoftwareengineer.tistory.com/99
 
 interface RemoteControl {
     public void turnOn();
