@@ -1,3 +1,5 @@
+//https://cornswrold.tistory.com/239
+
 interface RemoteControl {
     public void turnOn();
     public void turnOff();
