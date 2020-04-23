@@ -57,9 +57,13 @@ public class MyStream {
 				.collect(Collectors.toList());
 		System.out.println(sortedlang);
 		
-		// sorting by lenght
+		// sorting by length
 		sortedlang = lang.stream()
 				.sorted(Comparator.comparing(String::length))
+				.collect(Collectors.toList());
+		System.out.println(sortedlang);
+		sortedlang = lang.stream()
+				.sorted((s1, s2) -> s2.length() - s1.length())
 				.collect(Collectors.toList());
 		System.out.println(sortedlang);
 		sortedlang = lang.stream()

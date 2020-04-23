@@ -13,7 +13,7 @@ public class Anagram {
 		String a = scan.nextLine().toLowerCase();
 		String b = scan.nextLine().toLowerCase();
 		
-		System.out.println(isAnagram2(a, b) ? "Anagrams" : "Not Anagrams");
+		System.out.println(isAnagram(a, b) ? "Anagrams" : "Not Anagrams");
 //		dictA = countOccurrences(a);
 //		dictB = countOccurrences(b);
 //		System.out.println(dictA);
@@ -40,22 +40,6 @@ public class Anagram {
 		return isAnagram;
 	}
 	
-//	another solution by @battlizer (https://www.hackerrank.com/battlizer)
-	public static boolean isAnagram2(String a, String b) {
-		if(a.length() != b.length()) 
-			return false;
-		
-	    int c[] = new int[26], d[] = new int[26] ;
-	    a = a.toUpperCase();
-	    b = b.toUpperCase();
-	    for(int i=0; i<a.length(); i++){
-	        c[a.charAt(i) - 'A']++;
-	        d[b.charAt(i) - 'A']++;
-	    }
-	    for(int i =0;i<26; i++)
-	        if(c[i] != d[i] ) return false;
-	    return true;
-	}
 	
 	public static HashMap<Character, Long> countOccurrences(String s) {
 		HashMap<Character, Long> hm = new HashMap<>();

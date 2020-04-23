@@ -41,8 +41,8 @@ public class MyIntStream {
 		}
 		
 		str = IntStream.iterate(3, i -> i+3).limit(10);
-		str.forEach(s -> System.out.println(s));
-		
+		str.forEach(s -> System.out.println(s));	
+
 		IntStream stream = IntStream.generate(() 
 	            -> { return (int)(Math.random() * 10000); });
 		stream.limit(10).forEach(System.out::println); 
@@ -82,13 +82,16 @@ public class MyIntStream {
         		});  
         // Displaying the result 
         System.out.println(answer); 
-		
+
+        
+        // print out prime numbers
 		stream = IntStream.range(1, 100);
         List<Integer> primes = stream.filter(MyIntStream::isPrime)
                                     .boxed()
                                     .collect(Collectors.toList());         
         System.out.println(primes);
         
+
         stream = IntStream.range(1, 100);
         primes = stream.filter(i -> i > 1 && IntStream.range(2, i).noneMatch(index -> i % index == 0))
                                     .boxed()
