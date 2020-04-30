@@ -1,3 +1,6 @@
+//http://wiki.sys4u.co.kr/pages/viewpage.action?pageId=7766426
+//https://www.hackerrank.com/challenges/java-lambda-expressions/problem
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

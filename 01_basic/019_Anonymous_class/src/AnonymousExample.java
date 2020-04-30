@@ -4,6 +4,7 @@
 //https://cornswrold.tistory.com/219
 //https://cornswrold.tistory.com/231
 //https://cornswrold.tistory.com/237
+//http://wiki.sys4u.co.kr/pages/viewpage.action?pageId=7766426
 
 interface RemoteControl {
     public void turnOn();
