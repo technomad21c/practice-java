@@ -5,3 +5,5 @@
 .project
 .recommenders
 .settings
+*.iml
+*.idea

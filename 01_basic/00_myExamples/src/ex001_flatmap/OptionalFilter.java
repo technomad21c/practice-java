@@ -1,4 +1,4 @@
-package com.technomad.ex001_flatmap;
+package ex001_flatmap;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -78,8 +78,25 @@ public class OptionalFilter {
                 .flatMap(this::addNames)
                 .collect(Collectors.toList());
         result.stream().forEach(System.out::println);
+
+        System.out.println();
+        System.out.println("Map Test 2");
+        String[] names2 = new String[]{ "kim", "taeng", "mad", "play"};
+        Stream<String> result2 = Arrays.stream(names2)
+                .map(this::names)
+                .flatMap(Optional::stream)
+                .flatMap(m -> m.stream());
+
+
+        result2.forEach(System.out::println);
     }
 
+    private Optional<String> name(String name) {
+        return Optional.of(new String(name + "1"));
+    }
+    private Optional<List<String>> names(String name) {
+        return Optional.of(new ArrayList(List.of(name + "1", name + "2")));
+    }
     Stream<String> addNames(String name) {
         if (name.equals("kim")) {
             return Arrays.stream(new String[] {"kim", "Jeong", "Choi", "Park", "Lee"});
