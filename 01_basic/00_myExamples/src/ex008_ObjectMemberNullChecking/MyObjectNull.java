@@ -10,10 +10,12 @@ public class MyObjectNull {
         Symbol s = new Symbol();
 
         try {
+            methodMap.put("getSymbol", s.getClass().getDeclaredMethod("getSymbol"));
             methodMap.put("symbol", s.getClass().getDeclaredMethod("setSymbol", String.class));
             methodMap.put("name", s.getClass().getDeclaredMethod("setName", String.class));
             methodMap.get("symbol").invoke(s, "SYMBOL");
             methodMap.get("name").invoke(s, "NAME");
+            System.out.println("Get Symbol: " + methodMap.get("getSymbol").invoke(s,null));
 
         } catch (Exception e) {
             e.printStackTrace();
