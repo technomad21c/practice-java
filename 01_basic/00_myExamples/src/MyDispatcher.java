@@ -5,12 +5,16 @@ import ex005_Reflection.PersonReflection;
 import ex006_Pattern.MyPattern;
 import ex007_Thread.MyExecutor;
 import ex007_Thread.MyRunnable;
+import ex008_ObjectMemberNullChecking.MyObjectNull;
 
 public class MyDispatcher {
     public static void main(String[] args) {
-        int exampleId = 6;
 
-        switch (exampleId) {
+        switch (7) {
+            case 7:
+                MyObjectNull mon = new MyObjectNull();
+                mon.run();
+                break;
             case 6:
                 MyExecutor me = new MyExecutor();
                 me.run();
