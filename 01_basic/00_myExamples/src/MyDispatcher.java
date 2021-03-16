@@ -6,50 +6,54 @@ import ex006_Pattern.MyPattern;
 import ex007_Thread.MyExecutor;
 import ex007_Thread.MyRunnable;
 import ex008_ObjectMemberNullChecking.MyObjectNull;
+import ex009_Logging.MyLogging;
 import ex101_DesignPattern_Adapter.MyAdaptorPattern;
 
 public class MyDispatcher {
     public static void main(String[] args) {
 
-        switch (101) {
+        switch (9) {
             case 101:
                 MyAdaptorPattern map101 = new MyAdaptorPattern();
                 map101.run();
                 break;
-
-            case 007:
+            case 9:
+                MyLogging ml009 = new MyLogging();
+                ml009.run();
+                break;
+            case 7:
                 MyObjectNull mon = new MyObjectNull();
                 mon.run();
                 break;
 
-            case 006:
+            case 6:
                 MyExecutor me = new MyExecutor();
                 me.run();
                 MyRunnable mr = new MyRunnable();
                 mr.run();
                 break;
 
-            case 005:
+            case 5:
                 MyPattern mp = new MyPattern();
                 mp.run();
                 break;
 
-            case 004:
+            case 4:
                 PersonReflection pr = new PersonReflection();
                 pr.run();
                 break;
 
-            case 003:
+            case 3:
                 MyArrayStream mas = new MyArrayStream();
                 mas.run();
                 break;
 
-            case 002:
+            case 2:
                 MyOptional mo = new MyOptional();
                 mo.run();
                 break;
 
-            case 001:
+            case 1:
                 OptionalFilter optFilter = new OptionalFilter();
                 optFilter.run();
                 break;
