@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot Logging</title>
+    <link rel="stylesheet" th:href="@{/css/main.css}" href="../../css/main.css">
+</head>
+<body>
+    <h1> Spring Boot Logging Example </h1>
+    <ul>
+        <li th:each="n : ${num2}" th:text="${n}"></li>
+    </ul>
+</body>
+</html>
