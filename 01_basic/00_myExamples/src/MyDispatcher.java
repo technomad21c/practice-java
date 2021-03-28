@@ -12,7 +12,7 @@ import ex101_DesignPattern_Adapter.MyAdaptorPattern;
 public class MyDispatcher {
     public static void main(String[] args) {
 
-        switch (9) {
+        switch (2) {
             case 101:
                 MyAdaptorPattern map101 = new MyAdaptorPattern();
                 map101.run();

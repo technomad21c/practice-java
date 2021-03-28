@@ -1,9 +1,12 @@
 package ex009_Logging;
 // source: https://www.journaldev.com/977/logger-in-java-logging-example
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.logging.*;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
 public class MyLogging {
 
@@ -14,6 +17,12 @@ public class MyLogging {
             LogManager.getLogManager().readConfiguration(new FileInputStream("src/ex009_Logging/mylogging.properties"));
         } catch (SecurityException | IOException e1) {
             e1.printStackTrace();
+        }
+
+        File logDirectory = new File("logs");
+        if (!logDirectory.isDirectory())
+        {
+            logDirectory.mkdirs();
         }
 
 //        logger.setLevel(Level.FINE);

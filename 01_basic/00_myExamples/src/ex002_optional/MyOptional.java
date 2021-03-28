@@ -32,6 +32,8 @@ public class MyOptional {
 
         System.out.println(symbols.get("1"));
 
+        System.out.println(false ? "TRUE" : "FALSE");
+
     }
 
     private Optional<List<String>> find(String country) {
