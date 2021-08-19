@@ -9,13 +9,41 @@ import ex008_ObjectMemberNullChecking.ex008_ObjectMemberNullChecking.MyObjectNul
 import ex009_Logging.MyLogging;
 import ex010_StringConversion.StringConversion;
 import ex011_Json_Jackson.JacksonJson;
+import ex012_HashMapStream.HashMapStream;
+import ex013_Stream.ListStream;
+import ex014_Enum.MyEnum;
+import ex015_Date.MyDate;
+import ex016_EmptyInterface.MyEmptyInf;
 import ex101_DesignPattern_Adapter.ex101_DesignPattern_Adapter.MyAdaptorPattern;
 
 
 public class MyDispatcher {
     public static void main(String[] args) {
         try {
+//            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//            System.out.println("type commands: ");
+//            int opt = Integer.parseInt(br.readLine());
             switch (11) {
+                case 16:
+                    MyEmptyInf mei = new MyEmptyInf();
+                    mei.run();
+                    break;
+                case 15:
+                    MyDate md = new MyDate();
+                    md.run();
+                    break;
+                case 14:
+                    MyEnum men = new MyEnum();
+                    men.run();
+                    break;
+                case 13:
+                    ListStream ls = new ListStream();
+                    ls.run();
+                    break;
+                case 12:
+                    HashMapStream hms = new HashMapStream();
+                    hms.run();
+                    break;
                 case 11:
                     JacksonJson jj = new JacksonJson();
                     jj.run();
