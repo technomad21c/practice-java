@@ -1,3 +1,5 @@
+package src;
+
 import java.util.Iterator;
 import java.util.TreeSet;
 
@@ -14,7 +16,7 @@ public class TreeSetDemo {
 		ts1.add(124);
 		
 		System.out.println("TreeSet: " + ts1);
-		System.out.println("The first element by first() is: " + ts1.first());
+		System.out.println("The first element by first() is: " + ts1.last());
 		System.out.println("TreeSet: " + ts1);		
 		System.out.println("The first element by pollFirst() is: " + ts1.pollFirst());
 		System.out.println("TreeSet: " + ts1);		
@@ -31,7 +33,7 @@ public class TreeSetDemo {
 		ts1.add(48);
 		ts1.add(7);
 		ts1.add(124);
-		
+		System.out.println("TreeSet: " + ts1);
 		TreeSet<Integer> headSet = new TreeSet<>();
 		headSet = (TreeSet<Integer>)ts1.headSet(30);
 		Iterator itr = headSet.iterator();
