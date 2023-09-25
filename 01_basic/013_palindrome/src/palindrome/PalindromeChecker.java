@@ -17,7 +17,7 @@ public class PalindromeChecker {
 	public static boolean isPalindromeUsingIntStream(String text) {
 //		 noneMatch() returns true if none of the stream elements match the given predicate
 		String temp = text.replaceAll("\\s+", "").toLowerCase();
-		return IntStream.range(0, temp.length() / 2).noneMatch(i -> temp.charAt(i) != temp.charAt(temp.length() - i -1));
+		return IntStream.range(0, temp.length() / 2).allMatch(i -> temp.charAt(i) == temp.charAt(temp.length() - i -1));
 	}
 	
 	public boolean isPalindromeReverseTheString(String text) {

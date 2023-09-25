@@ -1,0 +1,12 @@
+
+0
+java:S1220""Move this file to a named package.
+N	java:S106"9Replace this use of System.out or System.err by a logger.(òÊËÓ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¦¨¹
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ğ³æÂûÿÿÿÿ
+M
+java:S3878"8Remove this array creation and simply pass the elements.(ºÄ7
+N
+java:S3878"8Remove this array creation and simply pass the elements.(ñù½Î
+M	java:S106"9Replace this use of System.out or System.err by a logger.(Å»„
+S	java:S106!"9Replace this use of System.out or System.err by a logger.(ë›Àûÿÿÿÿ

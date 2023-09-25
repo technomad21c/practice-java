@@ -1,0 +1,22 @@
+
+\
+java:S1192"FDefine a constant instead of duplicating this literal " kcal" 3 times.(†•³
+^
+java:S1192&"HDefine a constant instead of duplicating this literal " kcal, " 3 times.( äç¬
+l
+java:S1104"QMake color a static final constant or non-public and provide accessors if needed.(æ®şôûÿÿÿÿ
+0
+java:S1220""Move this file to a named package.
+>
+java:S3066"#Lower the visibility of this field.(æ®şôûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÁÁäåÿÿÿÿÿ
+O
+java:S1854#"9Remove this useless assignment to local variable "type2".(ÕÂìĞ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(†•³
+N	java:S106"9Replace this use of System.out or System.err by a logger.(””€È
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Óù›¾
+@
+java:S1481#"*Remove this unused "type2" local variable.(ÕÂìĞ
+N	java:S106&"9Replace this use of System.out or System.err by a logger.( äç¬
+N	java:S106)"9Replace this use of System.out or System.err by a logger.(¤ª¾“
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(Ì†ó”
