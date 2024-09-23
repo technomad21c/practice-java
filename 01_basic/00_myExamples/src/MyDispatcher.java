@@ -3,7 +3,6 @@ import ex002_optional.MyOptional;
 import ex004_ArrayStream.MyArrayStream;
 import ex005_Reflection.PersonReflection;
 import ex006_Pattern.MyPattern;
-import ex007_Thread.MyExecutor;
 import ex007_Thread.MyRunnable;
 import ex008_ObjectMemberNullChecking.ex008_ObjectMemberNullChecking.MyObjectNull;
 import ex009_Logging.MyLogging;
@@ -14,6 +13,7 @@ import ex013_Stream.ListStream;
 import ex014_Enum.MyEnum;
 import ex015_Date.MyDate;
 import ex016_EmptyInterface.MyEmptyInf;
+import ex017_Predicate.MyPrediciate;
 import ex101_DesignPattern_Adapter.ex101_DesignPattern_Adapter.MyAdaptorPattern;
 
 
@@ -23,7 +23,11 @@ public class MyDispatcher {
 //            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 //            System.out.println("type commands: ");
 //            int opt = Integer.parseInt(br.readLine());
-            switch (11) {
+            switch (17) {
+                case 17:
+                    MyPrediciate myPrediciate = new MyPrediciate();
+                    myPrediciate.run();
+                    break;
                 case 16:
                     MyEmptyInf mei = new MyEmptyInf();
                     mei.run();
@@ -64,14 +68,6 @@ public class MyDispatcher {
                     MyObjectNull mon = new MyObjectNull();
                     mon.run();
                     break;
-
-                case 6:
-                    MyExecutor me = new MyExecutor();
-                    me.run();
-                    MyRunnable mr = new MyRunnable();
-                    mr.run();
-                    break;
-
                 case 5:
                     MyPattern mp = new MyPattern();
                     mp.run();
