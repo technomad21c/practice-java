@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Profile;
 
 @Profile({"amqp","hello-world"})
 @Configuration
-public class amqpconfig {
+public class Tutorial1Config {
 
     @Bean
     public Queue hello() {
